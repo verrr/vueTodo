@@ -17,7 +17,8 @@ export default {
     name : 'AddTodo',
     data(){
         return{
-            title:''
+            title:'',
+            completed:false
         }
     },
     methods: {
