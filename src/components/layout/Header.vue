@@ -52,7 +52,6 @@ export default {
 </script>
 
 <style lang="scss">
-    @media screen and (max-width: 415px) {
         .header{
             background:rgb(241, 241, 241);
             width: 100%;
@@ -81,6 +80,7 @@ export default {
             }
         }
         .menu{
+                cursor: pointer;
                 ul{
                     list-style: none;
                    li{
@@ -135,6 +135,5 @@ export default {
             
             width: 100%;
         }
-    }
     
 </style>

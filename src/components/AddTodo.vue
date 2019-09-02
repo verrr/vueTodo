@@ -1,10 +1,9 @@
 <template>
     <div>
-        <h3>Add Todo</h3>
         <div class="add">
             <form action="" @submit="onSubmit">
-                <input type="text" v-model="title" placeholder="add todo ..." name="" id="">
-                <input type="submit" value="Submit">
+                <input type="text" v-model="title" placeholder="ADD TODO...">
+                <input type="submit" value="Add">
             
             </form>
         </div>
@@ -25,12 +24,40 @@ export default {
         ...mapActions(['addTodo']),
         onSubmit(e){
             e.preventDefault();
-            this.addTodo(this.title)
+            this.addTodo(this.title);
         }
     }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    .add{
+        *{
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    form{
+        
+        input[type='text']{
+            
+            padding: 10px 10px 8px 10px;
+            border: 1px solid grey;
 
+        }
+        input[type ='submit']{
+            appearance: none;
+            padding: 10px 10px 8px 10px;
+            margin-left: 5px;
+            background: white;
+            border: 1px solid grey;
+            color: #929292;
+            text-transform: uppercase;
+
+            cursor: pointer;
+        }
+    }
 </style>

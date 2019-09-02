@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@media screen and (max-width: 415px) {
+
 
     .todos {
     background: rgb(241, 241, 241);
@@ -54,6 +54,7 @@ export default {
     align-items: center;
     }
     .todo{
+        cursor: pointer;
         background: #FFFFFF;
         width: 100%;
         height: 120px;
@@ -117,8 +118,8 @@ export default {
             min-width: 25px;
             height: 25px;
 
-            border: 1.5px solid #e4e4e4;
-            color: #e4e4e4;
+            border: 1.5px solid #bdbdbd;
+            color: #bdbdbd;
             border-radius: 25px;
 
             text-transform: uppercase;
@@ -134,5 +135,4 @@ export default {
 
         }
     }
-}
 </style>

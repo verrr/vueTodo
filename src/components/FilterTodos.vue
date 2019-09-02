@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h3>Filter Todos</h3>
         <select @change="filterTodos($event)">
             <option value="200">200</option>
             <option value="100">100</option>
@@ -22,6 +21,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+    select{
+        background: white;
+        padding: 10px 10px 7px 10px;
+        color: #929292;
+        cursor: pointer;
 
+        
+    }   
 </style>

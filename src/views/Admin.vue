@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    
+    <div class="editor-container">
+      <AddTodo/>
+      <FilterTodos/>
+    </div>
     <Todos/>
   </div>
 </template>
@@ -12,7 +15,7 @@ import FilterTodos from '../components/FilterTodos.vue';
 
 
 export default {
-  name: 'home',
+  name: 'Admin',
   components: {
     Todos,
     AddTodo,
@@ -26,6 +29,16 @@ export default {
 }
 </script>
 
-<style>
- 
-</style>
+<style lang = "scss" scoped>
+  .editor-container{
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 50px;
+    padding:0 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+ </style>
