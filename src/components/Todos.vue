@@ -23,7 +23,6 @@ export default {
   methods: {
     ...mapActions(["fetchTodos", "deleteTodo", "updateTodo"]),
     onDblClick(todo) {
-        console.log('uhaa')
       const updatedTodo = {
         id: todo.id,
         title: todo.title,
